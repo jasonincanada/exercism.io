@@ -18,6 +18,14 @@ divide   = Divide   <$> (string " divided by "    *> number)
 term :: Parser Term
 term = add <|> minus <|> multiply <|> divide
 
+expression :: Parser [Term]
+expression = do
+  string "What is "
+  start <- number
+  terms <- many term
+  string "?"
+  return $ (Add start) : terms
+
 calculate :: [Term] -> Int
 calculate ts = go 0 ts
   where
@@ -28,14 +36,6 @@ calculate ts = go 0 ts
                       Multiply x -> go (val * x) ts
                       Divide x   -> go (val `div` x) ts
 
-expression :: Parser [Term]
-expression = do
-  string "What is "
-  start <- number
-  terms <- many term  
-  string "?"
-  return $ (Add start) : terms
-  
 answer :: String -> Maybe Int
 answer problem = case parse expression problem of
                    []             -> Nothing
