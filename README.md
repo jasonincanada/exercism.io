@@ -3,6 +3,7 @@ My solutions for [exercism.io](http://exercism.io/) programming challenges using
 
 Date | Title | exercism.io | Description / Notes
 --- | --- | --- | ---
+<nobr>26 Mar 2018</nobr> | [Bracket Push](./Brackets.hs) | [Link](http://exercism.io/submissions/8e42f1e5e5834205a46c551ede696169) | Check that brackets match properly
 <nobr>26 Mar 2018</nobr> | [Protein Translation](./ProteinTranslation.hs) | [Link](http://exercism.io/submissions/895ebc644695417fa10e02cf66733cf8) | Translate an RNA sequence into its amino acids
 <nobr>26 Mar 2018</nobr> | [Complex Numbers](./ComplexNumbers.hs) | [Link](http://exercism.io/submissions/8bc972cb5eb94b40b35994cab405aed7) | Implement complex numbers and their operations
 <nobr>25 Mar 2018</nobr> | [Wordy](./WordProblem.hs) | [Link](http://exercism.io/submissions/75c4c1324b4e47109150001df92465c2) | Parse simple arithmetic expressions written in English.  Note: Simple left-to-right parsing order (ie: equal precedence for all operations).  Also the divisions happen to be all integral so we don't need to cast from floats.
