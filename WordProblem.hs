@@ -27,14 +27,12 @@ expression = do
   return $ (Add start) : terms
 
 calculate :: [Term] -> Int
-calculate ts = go 0 ts
-  where
-    go val []     = val
-    go val (t:ts) = case t of
-                      Add x      -> go (val + x) ts
-                      Minus x    -> go (val - x) ts
-                      Multiply x -> go (val * x) ts
-                      Divide x   -> go (val `div` x) ts
+calculate = foldl f 0
+  where f val term = case term of
+                       Add x      -> val + x
+                       Minus x    -> val - x
+                       Multiply x -> val * x
+                       Divide x   -> val `div` x
 
 answer :: String -> Maybe Int
 answer problem = case parse expression problem of
