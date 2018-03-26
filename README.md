@@ -3,6 +3,7 @@ My solutions for [exercism.io](http://exercism.io/) programming challenges using
 
 Date | Title | exercism.io | Description / Notes
 --- | --- | --- | ---
+<nobr>26 Mar 2018</nobr> | [Complex Numbers](./ComplexNumbers.hs) | [Link](http://exercism.io/submissions/8bc972cb5eb94b40b35994cab405aed7) | Implement complex numbers and their operations
 <nobr>25 Mar 2018</nobr> | [Wordy](./WordProblem.hs) | [Link](http://exercism.io/submissions/75c4c1324b4e47109150001df92465c2) | Parse simple arithmetic expressions written in English.  Note: Simple left-to-right parsing order (ie: equal precedence for all operations).  Also the divisions happen to be all integral so we don't need to cast from floats.
 <nobr>25 Mar 2018</nobr> | [RNA Transcription](./DNA.hs) | [Link](http://exercism.io/submissions/9b313682ec3a48cc8b9449f2a6a8885b) | Map a DNA sequence to its RNA complement
 <nobr>24 Mar 2018</nobr> | [Run Length Encoding](./RunLength.hs) | [Link](http://exercism.io/submissions/af84d8787b6c4b438caa5620dde771d0) | Convert to/from run-length-encoding of ASCII strings
